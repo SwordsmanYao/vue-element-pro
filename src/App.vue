@@ -13,4 +13,8 @@ export default {
 <style lang="scss">
   /*引入全局css样式*/
   @import "styles/index.scss";
+
+  #app{
+    min-height: 100%;
+  }
 </style>
