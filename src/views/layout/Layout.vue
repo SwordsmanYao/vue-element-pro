@@ -1,7 +1,7 @@
 <template>
   <div class="app-wrapper">
     <navbar></navbar>
-    <div class="my-clear">
+    <div>
       <div class="sidebar-wrapper">
         <sidebar class="sidebar-container"></sidebar>
       </div>

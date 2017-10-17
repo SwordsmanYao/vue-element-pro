@@ -1,12 +1,12 @@
-html {
-  box-sizing: border-box;
-}
 body{
   margin: 0px;
 }
 
-.my-clear:after{
+.clear-float:after{
   content:'';
   display:block;
   clear:both;
+}
+a{
+  text-decoration:none;
 }
