@@ -65,7 +65,9 @@
   .el-menu-vertical:not(.el-menu--collapse) {
     width: 200px;
   }
-
+  .el-menu-item{
+    color: #48576a;
+  }
   .sidebar-link.is-active .el-menu-item{
     color: #20a0ff!important;
   }
