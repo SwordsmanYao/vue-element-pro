@@ -19,13 +19,13 @@
       <!--</el-submenu>-->
     <!--</el-submenu>-->
     <router-link exact class="sidebar-link" to="/">
-      <el-menu-item index="1">
+      <el-menu-item index="1" style="padding-left: 10px;padding-right: 10px">
         <i class="el-icon-menu"></i>
         <span slot="title">Form表单</span>
       </el-menu-item>
     </router-link>
     <router-link exact class="sidebar-link" to="/list">
-      <el-menu-item index="2">
+      <el-menu-item index="2" style="padding-left: 10px;padding-right: 10px">
         <i class="el-icon-setting"></i>
         <span slot="title">列表</span>
       </el-menu-item>
@@ -36,10 +36,10 @@
 
 <script>
   export default {
-    data() {
-      return {
-        isCollapse: false
-      };
+    computed: {
+      isCollapse() {
+        return !this.$store.state.app.sidebar.opened
+      }
     },
     methods: {
       handleOpen(key, keyPath) {
@@ -63,13 +63,23 @@
     min-height: 100%;
   }
   .el-menu-vertical:not(.el-menu--collapse) {
-    width: 200px;
+    width: 150px;
   }
   .el-menu-item{
     color: #48576a;
+    overflow: hidden;
   }
   .sidebar-link.is-active .el-menu-item{
     color: #20a0ff!important;
   }
-
+  .el-menu--collapse .sidebar-link span {
+    height: 0;
+    width: 0;
+    overflow: hidden;
+    visibility: hidden;
+    display: inline-block;
+  }
+  .el-menu--collapse {
+    width: 44px;
+  }
 </style>
