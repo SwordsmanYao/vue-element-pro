@@ -68,7 +68,7 @@
 
 <script>
   export default {
-    data() {
+    data () {
       return {
         form: {
           name: '',
@@ -83,9 +83,9 @@
       }
     },
     methods: {
-      onSubmit() {
-        console.log(this.form.region);
-        console.log('submit!');
+      onSubmit () {
+        console.log(this.form.region)
+        console.log('submit!')
       }
     }
   }

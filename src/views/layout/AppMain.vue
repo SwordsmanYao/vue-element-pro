@@ -15,11 +15,11 @@
 
 <script>
     export default {
-        computed: {
-          isopened () {
-            return this.$store.state.app.sidebar.opened
-          }
+      computed: {
+        isopened () {
+          return this.$store.state.app.sidebar.opened
         }
+      }
     }
 </script>
 
