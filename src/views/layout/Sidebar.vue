@@ -75,5 +75,4 @@
   .el-menu--collapse {
     width: 44px;
   }
-
 </style>
