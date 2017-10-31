@@ -1,8 +1,10 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Layout from '@/views/layout/Layout'
-import Form from '@/views/demo/form'
-import List from '@/views/demo/list'
+
+// 异步加载组件
+const Layout = r => require.ensure([], () => r(require('@/views/layout/Layout')), 'Layout')
+const Form = r => require.ensure([], () => r(require('@/views/demo/form')), 'Form')
+const List = r => require.ensure([], () => r(require('@/views/demo/list')), 'List')
 
 Vue.use(Router)
 
